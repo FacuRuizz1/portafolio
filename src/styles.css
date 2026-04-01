@@ -1,0 +1,75 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #0f0f0f;
+  color: white;
+  margin: 0;
+}
+
+body {
+  padding-top: 80px;
+}
+/* ===== VARIABLES GLOBALES ===== */
+:root {
+  --primary-color: #00bfff;
+  --text-light: #b3b3b3;
+  --background-dark: #0f0f0f;
+  --card-bg: #111;
+}
+
+/* ===== RESET Y AJUSTES GENERALES ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px; /* Base para rem */
+}
+
+body {
+  background-color: var(--background-dark);
+  color: white;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+  line-height: 1.6;
+  overflow-x: hidden; /* Evita scroll horizontal */
+}
+
+/* ===== MEDIA QUERIES GLOBALES ===== */
+/* Tablets (768px - 1024px) */
+@media (max-width: 1024px) {
+  html {
+    font-size: 15px;
+  }
+}
+
+/* Móviles grandes (480px - 768px) */
+@media (max-width: 768px) {
+  html {
+    font-size: 14px;
+  }
+  
+  section {
+    padding: 60px 15px !important;
+  }
+  
+  .section-title {
+    font-size: 2rem !important;
+    margin-bottom: 40px !important;
+  }
+}
+
+/* Móviles pequeños (hasta 480px) */
+@media (max-width: 480px) {
+  html {
+    font-size: 13px;
+  }
+  
+  section {
+    padding: 40px 10px !important;
+  }
+}
